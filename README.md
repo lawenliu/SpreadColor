@@ -1,4 +1,4 @@
-# AnimalRecognition
+# SpreadColor
 
 This is a demo for android developing. You can use the code to finish your works.
 
