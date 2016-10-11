@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:id="@+id/id_main_activity"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/id_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:text="@string/app_name"
+            tools:ignore="RelativeOverlap" />
+        <ImageView
+            android:id="@+id/id_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/menu_button_top_margin"
+            android:layout_marginRight="@dimen/menu_button_right_margin"
+            android:layout_marginEnd="@dimen/menu_button_right_margin"
+            android:src="@drawable/menu"
+            android:contentDescription="@string/share_empty" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/id_info_bar"
+        android:layout_below="@id/id_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/click_count"
+            tools:ignore="RelativeOverlap" />
+        <TextView
+            android:id="@+id/id_click_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_candidate_gridview"
+        android:layout_below="@id/id_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:numColumns="6"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth" />
+
+    <RelativeLayout
+        android:id="@+id/id_ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_game_gridview"
+        android:layout_below="@id/id_candidate_gridview"
+        android:layout_above="@id/id_ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:numColumns="6"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth" />
+</RelativeLayout>

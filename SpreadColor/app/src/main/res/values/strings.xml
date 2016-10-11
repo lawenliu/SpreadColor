@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SpreadColor</string>
+    <string name="new_game">New Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_bk_pick">Background</string>
+    <string name="action_rate_us">Rate Us</string>
+
+    <string name="share_empty"></string>
+    <string name="cancel">Cancel</string>
+    <string name="enter">Enter</string>
+    <string name="back">Back</string>
+    <string name="bk_pick_title">Select Background Image</string>
+    <string name="message_no_store">No app store is found in your device, please install one and try again.</string>
+
+    <string name="click_count">Click Count: </string>
+</resources>
